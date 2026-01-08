@@ -29,7 +29,7 @@ pipeline {
             }
         }    
                      
-         stage('Service') {
+         stage('Rest') {
                steps {
                          bat '''
                 set FLASK_APP=app\\api.py
@@ -44,4 +44,5 @@ pipeline {
           }
           
      }
+
 }
